@@ -1,0 +1,31 @@
+.footer {
+    background-color: #101010;
+}
+
+.footer__container {
+    padding-top: 7.5rem;
+    padding-bottom: 4.8rem;
+}
+
+.footer__nav {
+    width: 100%;
+    margin-bottom: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sot-set {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.icon {
+    fill: white;
+}
+
+.sot-set__link:hover .icon {
+    fill: $activeColor;
+}

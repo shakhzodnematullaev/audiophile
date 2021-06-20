@@ -1,0 +1,20 @@
+.hero {
+    background-color: $bgColor;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 12.8rem;
+    padding-bottom: 15.8rem;
+    background-image: url(../../img/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right 0 top -10rem;
+}
+
+.hero__box {
+    display: block;
+    width: 39.8rem;
+}

@@ -1,0 +1,30 @@
+.nav__list {
+    @include reset-list;
+    color: white;
+}
+
+.devices__list {
+    @include reset-list;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.types__list {
+    @include reset-list;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sot-set__list {
+    @include reset-list;
+    width: 10.4rem;
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 8.8rem;
+    position: absolute;
+    right: 0;
+    top: -8.8rem;
+    z-index: 3;
+}
