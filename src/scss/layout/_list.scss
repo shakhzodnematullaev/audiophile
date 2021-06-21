@@ -28,3 +28,19 @@
     top: -8.8rem;
     z-index: 3;
 }
+
+.headphones__list,
+.speakers__list {
+    @include reset-list;
+    flex-direction: column;
+}
+
+.box__list {
+    list-style: none;
+}
+
+.like__list {
+    @include reset-list;
+    width: 100%;
+    justify-content: space-between;
+}

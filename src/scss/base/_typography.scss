@@ -132,3 +132,55 @@
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
+
+.h-hero__title,
+.s-hero__title,
+.e-hero__title {
+    color: white;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    letter-spacing: 1.43px;
+}
+
+.headphones__title,
+.speakers__title,
+.earphones__title {
+    font-size: 1.4rem;
+    color: $activeColor;
+    letter-spacing: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    letter-spacing: 1.29px;
+    margin-bottom: 4.7rem;
+}
+
+.box__title {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    letter-spacing: 1.14px;
+    margin-bottom: 3.2rem;
+}
+
+.like__title {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    letter-spacing: 1.14px;
+    margin-bottom: 6.4rem;
+}
+
+.box__text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.5;
+}
+
+.like__sub-title {
+    font-size: 2.4rem;
+    letter-spacing: 1.71px;
+    margin-top: 4rem;
+    margin-bottom: 3.2rem;
+}

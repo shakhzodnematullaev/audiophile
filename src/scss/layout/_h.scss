@@ -1,0 +1,57 @@
+.h__link {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.h__text {
+    opacity: 0.5;
+    margin-top: 7.9rem;
+    margin-bottom: 5.6rem;
+}
+
+.h__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.count__box {
+    display: flex;
+    align-items: center;
+}
+
+.count {
+    display: inline-block;
+    width: 12rem;
+    background-color: #F1F1F1;
+    padding: 1.5rem 5.2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-right: 1.6rem;
+    position: relative;
+
+    &::before {
+        content: '-';
+        width: 1.6rem;
+        height: 1.8rem;
+        // background-color: black;
+        opacity: 0.25;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    
+    &::after {
+        content: '+';
+        width: 1.6rem;
+        height: 1.8rem;
+        // background-color: black;
+        opacity: 0.25;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}

@@ -1,0 +1,29 @@
+.features__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
+
+.features__box {
+    width: 63.5rem;
+}
+
+.box {
+    width: 35rem;
+}
+
+.box__item {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.5);
+    // opacity: 0.5;
+}
+
+.x {
+    color: $activeColor;
+    margin-right: 2.4rem;
+    // opacity: 1;
+}

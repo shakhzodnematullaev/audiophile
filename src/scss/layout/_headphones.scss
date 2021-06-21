@@ -1,0 +1,49 @@
+.headphones__container,
+.speakers__container,
+.earphones__container {
+    padding-top: 16rem;
+    padding-bottom: 4rem;
+}
+
+.headphones__list-item,
+.speakers__list-item,
+.earphones__list-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: 16rem;
+    }
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+}
+
+.headphones__box,
+.speakers__box,
+.earphones__box {
+    display: block;
+    width: 44.5rem;
+}
+
+.headphones__name,
+.speakers__name,
+.earphones__name {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    letter-spacing: 1.43px;
+    margin-bottom: 3.2rem;
+}
+
+.headphones__info,
+.speakers__info,
+.earphones__info {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.5;
+    margin-bottom: 4rem;
+}
