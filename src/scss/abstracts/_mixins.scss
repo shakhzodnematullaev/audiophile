@@ -1,20 +1,46 @@
 @mixin baElements ($w, $h) {
-  content: "";
-  display: inline-block;
-  width: $w;
-  height: $h;
+    content: "";
+    display: inline-block;
+    width: $w;
+    height: $h;
 }
 
 @mixin baImages ($w, $h, $url) {
-  @include baElements($w, $h);
+    @include baElements($w, $h);
 
-  background-image: url($url);
-  background-repeat: no-repeat;
-  background-size: contain;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @mixin reset-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+@mixin respond ($breakpoint) {
+    @if ($breakpoint==phones) {
+        @media screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==tablets) {
+        @media screen and (max-width: 56.25em) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==mini-px) {
+        @media screen and (max-width: 75em) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint==big-screens) {
+        @media screen and (min-width: 120em) {
+            @content;
+        }
+    }
 }

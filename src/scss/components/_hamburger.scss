@@ -1,0 +1,43 @@
+.hamburger {
+    display: none;
+
+    
+    @include respond (tablets) {
+        display: block;
+        width: 1.6rem;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-right: 4.2rem;
+        
+            &::before,
+            &::after,
+            &__inner {
+                content: '';
+                width: 100%;
+                display: block;
+                height: 3px;
+                background-color: white;
+                margin-bottom: 3px;
+            }
+
+            &::after {
+                margin-bottom: 0;
+            }
+
+            &--active .hamburger__inner {
+                display: none;
+            }
+
+            &--active::before {
+                transform: rotate(45deg);
+                position: relative;
+                top: 3px;
+                margin-bottom: 0;
+            }
+
+            &--active::after {
+                transform: rotate(-45deg);
+            }
+    }
+}

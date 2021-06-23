@@ -1,5 +1,6 @@
 .hero {
     background-color: $bgColor;
+
 }
 
 .hero__container {
@@ -12,9 +13,19 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right 0 top -10rem;
+
+    @include respond (tablets) {
+        background-position: center top -10rem;
+    }
+    
 }
 
 .hero__box {
     display: block;
     width: 39.8rem;
+    
+    @include respond (tablets) {
+        margin: 0 auto;
+        text-align: center;
+    }
 }

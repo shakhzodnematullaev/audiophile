@@ -51,6 +51,10 @@
     font-weight: 500;
     margin-bottom: 4rem;
     opacity: 0.75;
+
+    @include respond (tablets) {
+        margin: 0 auto 4rem auto;
+    }
 }
 
 .devices__title {
