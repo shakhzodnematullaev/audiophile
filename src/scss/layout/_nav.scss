@@ -5,3 +5,12 @@
         display: none;
     }
 }
+
+.footer__navbar {
+    margin-left: 19.7rem;
+    
+    @include respond (tablets) {
+        margin-left: 0;
+        margin-top: 3.2rem;
+    }
+}

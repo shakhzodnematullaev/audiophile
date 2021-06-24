@@ -37,3 +37,11 @@ hr {
     border: none;
     background-color: #979797;
 }
+
+.logo-link {
+    @include respond (phones) {
+        display: block;
+        width: 14.3rem;
+        margin: 0 auto;
+    }
+}

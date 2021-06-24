@@ -13,8 +13,14 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right 0 top -10rem;
-
+    
     @include respond (tablets) {
+        background-position: center top -10rem;
+    }
+    
+    @include respond (phones) {
+        padding-bottom: 11.2rem;
+        background-image: url(../../img/hero-img-mobile.png);
         background-position: center top -10rem;
     }
     
@@ -25,6 +31,12 @@
     width: 39.8rem;
     
     @include respond (tablets) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @include respond (phones) {
+        width: 100%;
         margin: 0 auto;
         text-align: center;
     }

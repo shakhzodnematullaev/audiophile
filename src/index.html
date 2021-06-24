@@ -28,7 +28,7 @@
                     <span class="hamburger__inner"></span>
                 </button>
 
-                <a href="index.html">
+                <a class="logo-link" href="index.html">
                     <img class="logo" src="../img/audiophile 2.svg" alt="logo">
                 </a>
         
@@ -60,6 +60,34 @@
 
     <main class="main">
         <section class="hero">
+            <div class="container devices-burger__container">
+                <ul class="devices-burger__list">
+                    <li class="devices-burger__list-item">
+                        <picture>
+                            <!-- <source type="image/webp" srcset="../img/headphones.webp 1x, ../img/headphones@2x.webp 2x"> -->
+                            <img class="devices__img" src="../img/headphones.png" srcset="../img/headphones.png 1x, ../img/headphones@2x.png 2x" width="120" alt="headphones">                            
+                          </picture>
+                        <h2 class="devices__title">HEADPHONES</h2>
+                        <a class="devices__link" href="headphones.html">SHOP</a>
+                    </li>
+                    <li class="devices-burger__list-item2">
+                        <picture>
+                            <!-- <source type="image/webp" srcset="../img/speakers.webp 1x, ../img/speakers@2x.webp 2x"> -->
+                            <img class="devices__img" src="../img/speakers.png" srcset="../img/speakers.png 1x, ../img/speakers@2x.png 2x" width="120" alt="speakers">                            
+                          </picture>
+                        <h2 class="devices__title">SPEAKERS</h2>
+                        <a class="devices__link" href="speakers.html">SHOP</a>
+                    </li>
+                    <li class="devices-burger__list-item3">
+                        <picture>
+                            <!-- <source type="image/webp" srcset="../img/earphones.webp 1x, ../img/earphones@2x.webp 2x"> -->
+                            <img class="devices__img" src="../img/earphones.png" srcset="../img/earphones.png 1x, ../img/earphones@2x.png 2x" width="120" alt="earphones">                            
+                          </picture>
+                        <h2 class="devices__title">EARPHONES</h2>
+                        <a class="devices__link" href="earphones.html">SHOP</a>
+                    </li>
+                </ul>
+            </div>
             <div class="container hero__container">
                 <div class="hero__box">
                     <h2 class="hero__title">NEW PRODUCT</h2>
@@ -118,6 +146,7 @@
                     <li class="types__list-item yx1">
                         <picture>
                             <!-- <source type="image/webp" srcset="../img/yx1.webp 1x, ../img/yx1@2x.webp 2x"> -->
+                            <source media="(max-width: 56.25em)" srcset="../img/yx1-tablet.png 1x, ../img/yx1-tablet@2x.png 2x" width="100%">
                             <img src="../img/yx1.png" srcset="../img/yx1.png 1x, ../img/yx1@2x.png 2x" alt="yx1" height="317">                            
                         </picture>
                         <div class="yx1-box">
@@ -138,6 +167,7 @@
 
                 <picture>
                     <!-- <source type="image/webp" srcset="../img/gear.webp 1x, ../img/gear.png@2x.webp 2x"> -->
+                    <source media="(max-width: 56.25em)" srcset="../img/gear-tablet.png 1x, ../img/gear-tablet@2x.png 2x">
                     <img src="../img/gear.png" srcset="../img/gear.png 1x, ../img/gear.png@2x.png 2x" alt="gear">                            
                 </picture>
             </div>
@@ -151,7 +181,7 @@
                     <img class="logo" src="../img/audiophile 2.svg" alt="logo">
                 </a>
         
-                <nav class="nav">
+                <nav class="footer__navbar">
                     <ul class="nav__list">
                         <li class="list__item">
                             <a class="list-link" href="index.html">HOME</a>
@@ -199,5 +229,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

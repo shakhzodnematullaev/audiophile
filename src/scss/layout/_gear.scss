@@ -3,8 +3,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 16rem 0;
+
+    @include respond (tablets) {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 9.6rem 0;
+    }
 }
 
 .gear__box {
     width: 44.5rem;
+
+    @include respond (tablets) {
+        width: 57.3rem;
+        margin-top: 6.3rem;
+    }
 }
