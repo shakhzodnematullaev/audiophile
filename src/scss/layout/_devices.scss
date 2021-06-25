@@ -61,6 +61,14 @@
     @include respond (tablets) {
         width: 22.3rem;
     }
+
+    @include respond (phones) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 3.8rem;
+        }
+    }
 }
 
 

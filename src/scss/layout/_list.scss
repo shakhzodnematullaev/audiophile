@@ -3,12 +3,20 @@
     color: white;
 }
 
+.nav__list--footer {
+    flex-direction: column
+}
+
 .devices__list {
     @include reset-list;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
     text-align: center;
+
+    @include respond (phones) {
+        flex-direction: column;
+    }
 }
 
 .devices-burger__list {
@@ -38,6 +46,10 @@
 
     @include respond (tablets) {
         top: 0;
+    }
+
+    @include respond (phones) {
+        position: unset;
     }
 }
 

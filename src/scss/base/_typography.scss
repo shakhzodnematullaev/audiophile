@@ -109,6 +109,16 @@
     color: white;
     letter-spacing: 2px;
     margin-bottom: 2.4rem;
+
+    @include respond (phones) {
+        width: 17.4rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.6rem;
+        line-height: 4rem;
+        letter-spacing: 1.29px;
+
+    }
 }
 
 .zx9__info {
@@ -127,11 +137,24 @@
     &-span {
         color: $activeColor;
     }
+
+    @include respond (phones) {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+        letter-spacing: 1px;
+        width: 100%;
+        padding: 0 3rem;
+    }
 }
 
 .gear__info {
     font-size: 1.5rem;
     line-height: 2.5rem;
+
+    @include respond (phones) {
+        width: 100%;
+        padding: 0 1rem;
+    }
 }
 
 .footer__info {
@@ -152,6 +175,10 @@
     color: white;
     font-size: 1.5rem;
     line-height: 2.5rem;
+
+    @include respond (phones) {
+        margin-bottom: 4.8rem;
+    }
 }
 
 .h-hero__title,
