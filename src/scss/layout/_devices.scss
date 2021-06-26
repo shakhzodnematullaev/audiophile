@@ -36,6 +36,25 @@
         }
         
     }
+
+    @include respond (tablets) {
+        padding-top: 3.2rem;
+        padding-bottom: 3.5rem;
+        
+        &::before {
+            content: '';
+            width: 100%;
+            height: 68rem;
+            background-color: white;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -10;
+        }
+        
+    }
 }
 
 .devices-burger__container--active {
@@ -97,6 +116,19 @@
         &::before {
             height: 16.5rem;
             bottom: -6rem;
+        }
+    }
+
+    @include respond (phones) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 3.8rem;
+        }
+
+        &::before {
+            height: 12.5rem;
+            bottom: -2rem;
         }
     }
 }

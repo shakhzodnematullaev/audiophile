@@ -2,3 +2,9 @@
     padding-top: 16rem;
     text-align: center;
 }
+
+.like__item {
+    &:not(:last-child) {
+        margin-bottom: 5.6rem;
+    }
+}

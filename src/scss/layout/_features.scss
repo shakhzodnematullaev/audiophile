@@ -4,14 +4,34 @@
     justify-content: space-between;
     padding-top: 16rem;
     padding-bottom: 16rem;
+
+    @include respond (tablets) {
+        flex-direction: column;
+    }
 }
 
 .features__box {
     width: 63.5rem;
+
+    @include respond (tablets) {
+        width: 100%;
+    }
 }
 
 .box {
     width: 35rem;
+
+    @include respond (tablets) {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-top: 12rem;
+    }
+
+    @include respond (phones) {
+        flex-direction: column;
+    }
 }
 
 .box__item {

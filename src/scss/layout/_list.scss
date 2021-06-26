@@ -4,7 +4,9 @@
 }
 
 .nav__list--footer {
-    flex-direction: column
+    @include respond (phones) {
+        flex-direction: column;
+    }
 }
 
 .devices__list {
@@ -25,6 +27,10 @@
     align-items: baseline;
     justify-content: space-between;
     text-align: center;
+    
+    @include respond (phones) {
+        flex-direction: column;
+    }
 }
 
 .types__list {
@@ -61,10 +67,22 @@
 
 .box__list {
     list-style: none;
+
+    @include respond (tablets) {
+        width: 50%;
+    }
+
+    @include respond (tablets) {
+        width: 100%;
+    }
 }
 
 .like__list {
     @include reset-list;
     width: 100%;
     justify-content: space-between;
+
+    @include respond (phones) {
+        flex-direction: column;
+    }
 }

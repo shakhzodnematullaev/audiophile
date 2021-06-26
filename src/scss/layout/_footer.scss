@@ -63,8 +63,10 @@
 }
 
 .list__item--footer {
-    &:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 1.6rem;
+    @include respond (phones) {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 1.6rem;
+        }
     }
 }

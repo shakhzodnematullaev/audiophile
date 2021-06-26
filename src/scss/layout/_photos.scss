@@ -2,8 +2,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond (phones) {
+        flex-direction: column;
+    }
+}
+
+.photos__box {
+    @include respond (phones) {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 
 .p_img {
     margin-bottom: 3.2rem;
+
+    @include respond (tablets) {
+        margin-bottom: 2rem;
+    }
 }

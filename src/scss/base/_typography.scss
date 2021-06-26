@@ -188,6 +188,11 @@
     font-size: 4rem;
     line-height: 4.4rem;
     letter-spacing: 1.43px;
+
+    @include respond (phones) {
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
 }
 
 .headphones__title,
@@ -211,6 +216,14 @@
     line-height: 3.6rem;
     letter-spacing: 1.14px;
     margin-bottom: 3.2rem;
+
+    @include respond (tablets) {
+        width: 50%;
+    }
+
+    @include respond (tablets) {
+        width: 100%;
+    }
 }
 
 .like__title {
@@ -231,4 +244,15 @@
     letter-spacing: 1.71px;
     margin-top: 4rem;
     margin-bottom: 3.2rem;
+}
+
+.h__text {
+    opacity: 0.5;
+    margin-top: 7.9rem;
+    margin-bottom: 5.6rem;
+    
+    @include respond (phones) {
+        margin-top: 1.6rem;
+        margin-bottom: 2.4rem;
+    }
 }

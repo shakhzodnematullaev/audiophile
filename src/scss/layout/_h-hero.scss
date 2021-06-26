@@ -9,4 +9,8 @@
 .e-hero__container {
     padding: 9.7rem 0;
     text-align: center;
+
+    @include respond (phones) {
+        padding: 3.2rem 0;
+    }
 }

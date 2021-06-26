@@ -24,7 +24,11 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__box">
-                <a href="index.html">
+                <button class="hamburger" type="button">
+                    <span class="hamburger__inner"></span>
+                </button>
+
+                <a class="logo-link" href="index.html">
                     <img class="logo" src="../img/audiophile 2.svg" alt="logo">
                 </a>
         
@@ -56,6 +60,34 @@
 
     <main>
         <section class="h">
+            <div class="container devices-burger__container">
+                <ul class="devices-burger__list">
+                    <li class="devices-burger__list-item">
+                        <picture>
+                            <!-- <source type="image/webp" srcset="../img/headphones.webp 1x, ../img/headphones@2x.webp 2x"> -->
+                            <img class="devices__img" src="../img/headphones.png" srcset="../img/headphones.png 1x, ../img/headphones@2x.png 2x" width="120" alt="headphones">                            
+                          </picture>
+                        <h2 class="devices__title">HEADPHONES</h2>
+                        <a class="devices__link" href="headphones.html">SHOP</a>
+                    </li>
+                    <li class="devices-burger__list-item2">
+                        <picture>
+                            <!-- <source type="image/webp" srcset="../img/speakers.webp 1x, ../img/speakers@2x.webp 2x"> -->
+                            <img class="devices__img" src="../img/speakers.png" srcset="../img/speakers.png 1x, ../img/speakers@2x.png 2x" width="120" alt="speakers">                            
+                          </picture>
+                        <h2 class="devices__title">SPEAKERS</h2>
+                        <a class="devices__link" href="speakers.html">SHOP</a>
+                    </li>
+                    <li class="devices-burger__list-item3">
+                        <picture>
+                            <!-- <source type="image/webp" srcset="../img/earphones.webp 1x, ../img/earphones@2x.webp 2x"> -->
+                            <img class="devices__img" src="../img/earphones.png" srcset="../img/earphones.png 1x, ../img/earphones@2x.png 2x" width="120" alt="earphones">                            
+                          </picture>
+                        <h2 class="devices__title">EARPHONES</h2>
+                        <a class="devices__link" href="earphones.html">SHOP</a>
+                    </li>
+                </ul>
+            </div>
             <div class="container h__container">
                 <a class="h__link" href="headphones.html">
                     <p class="h__text">Go Back</p>
@@ -64,12 +96,14 @@
                 <div class="h__box">
                     <picture>
                         <!-- <source type="image/webp" srcset="../img/x59.webp 1x, ../img/x59@2x.webp 2x"> -->
+                        <source media="(max-width: 37.5em)" srcset="../img/x59-mobile2.png 1x, ../img/x59-mobile2@2x.png 2x">
+                        <source media="(max-width: 56.25em)" srcset="../img/x59-tablet2.png 1x, ../img/x59-tablet2@2x.png 2x">
                         <img class="headphones__img" src="../img/x59.png" srcset="../img/x59.png 1x, ../img/x59@2x.png 2x" alt="headphones">                            
                     </picture>
     
-                    <div class="headphones__box">
+                    <div class="shablon-box">
                         <!-- <h2 class="headphones__title">NEW PRODUCT</h2> -->
-                        <p class="headphones__name">XX59 <br> HEADPHONES</p>
+                        <p class="shablon__name">XX59 <br> HEADPHONES</p>
                         <p class="headphones__info">Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.</p>
                         <p class="price">$899</p>
                         <div class="count__box">
@@ -108,15 +142,21 @@
                 <div class="photos__box">
                     <picture>
                         <!-- <source type="image/webp" srcset="../img/ph7.webp 1x, ../img/ph7@2x.webp 2x"> -->
+                        <source media="(max-width: 37.5em)" srcset="../img/ph7-mobile.png 1x, ../img/ph7-mobile@2x.png 2x">
+                        <source media="(max-width: 56.25em)" srcset="../img/ph7-tablet.png 1x, ../img/ph7-tablet@2x.png 2x">
                         <img class="p_img" src="../img/ph7.png" srcset="../img/ph7.png 1x, ../img/ph7@2x.png 2x" alt="headphones">                            
                     </picture>
                     <picture>
                         <!-- <source type="image/webp" srcset="../img/ph8.webp 1x, ../img/ph8@2x.webp 2x"> -->
+                        <source media="(max-width: 37.5em)" srcset="../img/ph8-mobile.png 1x, ../img/ph8-mobile@2x.png 2x">
+                        <source media="(max-width: 56.25em)" srcset="../img/ph8-tablet.png 1x, ../img/ph8-tablet@2x.png 2x">
                         <img class="headphones__img" src="../img/ph8.png" srcset="../img/ph8.png 1x, ../img/ph8@2x.png 2x" alt="headphones">                            
                     </picture>
                 </div>
                 <picture>
                     <!-- <source type="image/webp" srcset="../img/ph9.webp 1x, ../img/ph9@2x.webp 2x"> -->
+                    <source media="(max-width: 37.5em)" srcset="../img/ph9-mobile.png 1x, ../img/ph9-mobile@2x.png 2x">
+                    <source media="(max-width: 56.25em)" srcset="../img/ph9-tablet.png 1x, ../img/ph9-tablet@2x.png 2x">
                     <img class="headphones__img" src="../img/ph9.png" srcset="../img/ph9.png 1x, ../img/ph9@2x.png 2x" alt="headphones">                            
                 </picture>
             </div>
@@ -129,6 +169,8 @@
                     <li class="like__item">
                         <picture>
                             <!-- <source type="image/webp" srcset="../img/like-mark2.webp 1x, ../img/like-mark2@2x.webp 2x"> -->
+                            <source media="(max-width: 37.5em)" srcset="../img/like-mark2-mobile.png 1x, ../img/like-mark2-mobile@2x.png 2x">
+                            <source media="(max-width: 56.25em)" srcset="../img/like-mark2-tablet.png 1x, ../img/like-mark2-tablet@2x.png 2x">
                             <img class="headphones__img" src="../img/like-mark2.png" srcset="../img/like-mark2.png 1x, ../img/like-mark2@2x.png 2x" alt="headphones">                            
                         </picture>
                         <h3 class="like__sub-title">XX99 MARK II</h3>
@@ -137,6 +179,8 @@
                     <li class="like__item">
                         <picture>
                             <!-- <source type="image/webp" srcset="../img/likex99.webp 1x, ../img/likex99@2x.webp 2x"> -->
+                            <source media="(max-width: 37.5em)" srcset="../img/likex99-mobile.png 1x, ../img/likex99-mobile@2x.png 2x">
+                            <source media="(max-width: 56.25em)" srcset="../img/likex99-tablet.png 1x, ../img/likex99-tablet@2x.png 2x">
                             <img class="headphones__img" src="../img/likex99.png" srcset="../img/likex99.png 1x, ../img/likex99@2x.png 2x" alt="headphones">                            
                         </picture>
                         <h3 class="like__sub-title">XX99 MARK I</h3>
@@ -145,6 +189,8 @@
                     <li class="like__item">
                         <picture>
                             <!-- <source type="image/webp" srcset="../img/likex9.webp 1x, ../img/likex9@2x.webp 2x"> -->
+                            <source media="(max-width: 37.5em)" srcset="../img/likex9-mobile.png 1x, ../img/likex9-mobile@2x.png 2x">
+                            <source media="(max-width: 56.25em)" srcset="../img/likex9-tablet.png 1x, ../img/likex9-tablet@2x.png 2x">
                             <img class="headphones__img" src="../img/likex9.png" srcset="../img/likex9.png 1x, ../img/likex9@2x.png 2x" alt="headphones">                            
                         </picture>
                         <h3 class="like__sub-title">ZX9 SPEAKER</h3>
@@ -194,6 +240,8 @@
 
                 <picture>
                     <!-- <source type="image/webp" srcset="../img/gear.webp 1x, ../img/gear.png@2x.webp 2x"> -->
+                    <source media="(max-width: 37.5em)" srcset="../img/gear-mobile.png 1x, ../img/gear-mobile@2x.png 2x">
+                    <source media="(max-width: 56.25em)" srcset="../img/gear-tablet.png 1x, ../img/gear-tablet@2x.png 2x">
                     <img src="../img/gear.png" srcset="../img/gear.png 1x, ../img/gear.png@2x.png 2x" alt="gear">                            
                 </picture>
             </div>
@@ -207,18 +255,18 @@
                     <img class="logo" src="../img/audiophile 2.svg" alt="logo">
                 </a>
         
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="list__item">
+                <nav class="footer__navbar">
+                    <ul class="nav__list nav__list--footer">
+                        <li class="list__item list__item--footer">
                             <a class="list-link" href="index.html">HOME</a>
                         </li>
-                        <li class="list__item">
+                        <li class="list__item list__item--footer">
                             <a class="list-link" href="headphones.html">HEADPHONES</a>
                         </li>
-                        <li class="list__item">
+                        <li class="list__item list__item--footer">
                             <a class="list-link" href="speakers.html">SPEAKERS</a>
                         </li>
-                        <li class="list__item">
+                        <li class="list__item list__item--footer">
                             <a class="list-link" href="earphones.html">EARPHONES</a>
                         </li>
                     </ul>
@@ -255,5 +303,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
