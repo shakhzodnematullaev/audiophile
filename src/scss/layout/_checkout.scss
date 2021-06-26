@@ -4,12 +4,20 @@
 
 .checkout__container {
     padding-bottom: 14.1rem;
+
+    @include respond (tablets) {
+        padding-bottom: 11.6rem;
+    }
 }
 
 .checkout__box {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        flex-direction: column;
+    }
 }
 
 .checkout__form {
@@ -17,6 +25,11 @@
     padding: 5.4rem 4.8rem 4.8rem;
     border-radius: 8px;
     background-color: white;
+    
+    @include respond (tablets) {
+        width: 100%;
+        padding: 3rem 2.7rem;
+    }
 }
 
 .checkout__link {
@@ -40,6 +53,10 @@
     flex-direction: column;
     width: 49%;
     margin-bottom: 2.4rem;
+
+    @include respond (phones) {
+        width: 100%;
+    }
 }
 
 .form-box--address {
@@ -79,6 +96,11 @@
     padding: 3.2rem;
     background-color: white;
     border-radius: 8px;
+
+    @include respond (tablets) {
+        width: 100%;
+        margin-top: 3.2rem;
+    }
 }
 
 .s-total,
