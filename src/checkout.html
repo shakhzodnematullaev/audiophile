@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earphones</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -101,7 +101,7 @@
                     </div>
     
                     <button class="modal__checkout" type="submit">
-                        <a class="modal__checkout-link" href="checkout.html">CHECKOUT</a>
+                        <a class="modal__checkout-link" href="#">CHECKOUT</a>
                     </button>
                 </div>
             </div>
@@ -112,106 +112,137 @@
     </header>
 
     <main>
-        <section class="e-hero">
-            <div class="container devices-burger__container">
-                <ul class="devices-burger__list">
-                    <li class="devices-burger__list-item">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/headphones.webp 1x, ../img/headphones@2x.webp 2x"> -->
-                            <img class="devices__img" src="../img/headphones.png" srcset="../img/headphones.png 1x, ../img/headphones@2x.png 2x" width="120" alt="headphones">                            
-                          </picture>
-                        <h2 class="devices__title">HEADPHONES</h2>
-                        <a class="devices__link" href="headphones.html">SHOP</a>
-                    </li>
-                    <li class="devices-burger__list-item2">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/speakers.webp 1x, ../img/speakers@2x.webp 2x"> -->
-                            <img class="devices__img" src="../img/speakers.png" srcset="../img/speakers.png 1x, ../img/speakers@2x.png 2x" width="120" alt="speakers">                            
-                          </picture>
-                        <h2 class="devices__title">SPEAKERS</h2>
-                        <a class="devices__link" href="speakers.html">SHOP</a>
-                    </li>
-                    <li class="devices-burger__list-item3">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/earphones.webp 1x, ../img/earphones@2x.webp 2x"> -->
-                            <img class="devices__img" src="../img/earphones.png" srcset="../img/earphones.png 1x, ../img/earphones@2x.png 2x" width="120" alt="earphones">                            
-                          </picture>
-                        <h2 class="devices__title">EARPHONES</h2>
-                        <a class="devices__link" href="earphones.html">SHOP</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="container e-hero__container">
-                <h2 class="e-hero__title">EARPHONES</h2>
-            </div>
-        </section>
+        <section class="checkout">
+            <div class="container checkout__container">
+                <a class="checkout__link" href="index.html">
+                    <p class="checkout__text">Go Back</p>
+                </a>
 
-        <section class="earphones">
-            <div class="container earphones__container">
-                <ul class="earphones__list">
-                    <li class="earphones__list-item">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/yx1earphone.webp 1x, ../img/yx1earphone@2x.webp 2x"> -->
-                            <source media="(max-width: 37.5em)" srcset="../img/yx1earphone-mobile.png 1x, ../img/yx1earphone-mobile@2x.png 2x">
-                            <source media="(max-width: 56.25em)" srcset="../img/yx1earphone-tablet.png 1x, ../img/yx1earphone-tablet@2x.png 2x">
-                            <img class="speakers__img" src="../img/yx1earphone.png" srcset="../img/yx1earphone.png 1x, ../img/yx1earphone@2x.png 2x" alt="earphones">                            
-                        </picture>
+                <div class="checkout__box">
+                    <div class="checkout__form">
+                        <h2 class="checkout__title">CHECKOUT</h2>
+                        <h3 class="form__title">BILLING DETAILS</h3>
+                        <form class="billing-form" action="#">
+                            <div class="form-box">
+                                <label class="label-name" for="#">Name</label>
+                                <input class="input" type="text" name="name" id="name" placeholder="Alexei Ward">
+                            </div>
+                            <div class="form-box">
+                                <label class="label-name" for="#">Email Address</label>
+                                <input class="input" type="email" name="email" id="email" placeholder="alexei@mail.com">
+                            </div>
+                            <div class="form-box">
+                                <label class="label-name" for="#">Phone Number</label>
+                                <input class="input" type="number" name="number" id="name" placeholder="+1 202-555-0136">
+                            </div>
+                        </form>
 
-                        <div class="earphones__box">
-                            <h2 class="earphones__title">NEW PRODUCT</h2>
-                            <p class="earphones__name">ZX9 <br> SPEAKER</p>
-                            <p class="earphones__info">Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.</p>
-                            <a href="earphones1.html" class="btn">SEE PRODUCT</a>
+                        <h3 class="form__title">SHIPPING INFO</h3>
+                        <form class="billing-form" action="#">
+                            <div class="form-box form-box--address">
+                                <label class="label-name" for="#">Address</label>
+                                <input class="input" type="text" name="address" id="address" placeholder="1137 Williams Avenue">
+                            </div>
+                            <div class="form-box">
+                                <label class="label-name" for="#">ZIP Code</label>
+                                <input class="input" type="text" name="zipcode" id="zipcode" placeholder="10001">
+                            </div>
+                            <div class="form-box">
+                                <label class="label-name" for="#">City</label>
+                                <input class="input" type="text" name="city" id="city" placeholder="New York">
+                            </div>
+                            <div class="form-box">
+                                <label class="label-name" for="#">Country</label>
+                                <input class="input" type="text" name="country" id="country" placeholder="United States">
+                            </div>
+                        </form>
+
+                        <h3 class="form__title">PAYMENT DETAILS</h3>
+                        <form class="billing-form billing-form--payment" action="#">
+                            <label class="label-name" for="#">Payment method</label>
+                            <div class="form-box">
+                                <input class="input" type="radio" name="city" id="city" placeholder="e-Money">
+                                <label class="label-name" for="#">City</label>
+                            </div>
+                            <div class="form-box form-box--country">
+                                <input class="input" type="radio" name="country" id="country" placeholder="Cash on Delivery">
+                                <label class="label-name" for="#">Country</label>
+                            </div>
+                        </form>
+
+                        <form class="billing-form" action="#">
+                            <div class="form-box">
+                                <label class="label-name" for="#">e-Money Number</label>
+                                <input class="input" type="number" name="number" id="number" placeholder="238521993">
+                            </div>
+                            <div class="form-box">
+                                <label class="label-name" for="#">e-Money PIN</label>
+                                <input class="input" type="number" name="number" id="country" placeholder="6891">
+                            </div>
+                        </form>
+
+                        <p class="cash-text">The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+                    </div>
+
+                    <div class="summmary__box">
+                        <div class="modal__t-box">
+                            <h2 class="modal__title">SUMMARY</h2>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="devices">
-            <div class="container devices__container">
-                <ul class="devices__list">
-                    <li class="devices__list-item">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/headphones.webp 1x, ../img/headphones@2x.webp 2x"> -->
-                            <img class="devices__img" src="../img/headphones.png" srcset="../img/headphones.png 1x, ../img/headphones@2x.png 2x" alt="headphones">                            
-                          </picture>
-                        <h2 class="devices__title">HEADPHONES</h2>
-                        <a class="devices__link" href="headphones.html">SHOP</a>
-                    </li>
-                    <li class="devices__list-item">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/speakers.webp 1x, ../img/speakers@2x.webp 2x"> -->
-                            <img class="devices__img" src="../img/speakers.png" srcset="../img/speakers.png 1x, ../img/speakers@2x.png 2x" alt="speakers">                            
-                          </picture>
-                        <h2 class="devices__title">SPEAKERS</h2>
-                        <a class="devices__link" href="speakers.html">SHOP</a>
-                    </li>
-                    <li class="devices__list-item">
-                        <picture>
-                            <!-- <source type="image/webp" srcset="../img/earphones.webp 1x, ../img/earphones@2x.webp 2x"> -->
-                            <img class="devices__img" src="../img/earphones.png" srcset="../img/earphones.png 1x, ../img/earphones@2x.png 2x" alt="earphones">                            
-                          </picture>
-                        <h2 class="devices__title">EARPHONES</h2>
-                        <a class="devices__link" href="earphones.html">SHOP</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="gear">
-            <div class="container gear__container">
-                <div class="gear__box">
-                    <h2 class="gear__title">Bringing you the <span class="gear__title-span">best</span> audio gear</h2>
-                    <p class="gear__info">Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
+                        <ul class="modal__list">
+                            <li class="modal__list-item">
+                                <div class="modal__item-box">
+                                    <img class="modal__img" src="../img/modal-x99.png" alt="">
+                                    <div class="modal__item-box2">
+                                        <h3 class="modal-name">X99 MK II</h3>
+                                        <p class="modal-price">$2,999</p>
+                                    </div>
+                                </div>
+                                <p class="summary-count">x1</p>
+                            </li>
+                            <li class="modal__list-item">
+                                <div class="modal__item-box">
+                                    <img class="modal__img" src="../img/modal-x59.png" alt="">
+                                    <div class="modal__item-box2">
+                                        <h3 class="modal-name">XX59</h3>
+                                        <p class="modal-price">$899</p>
+                                    </div>
+                                </div>
+                                <p class="summary-count">x2</p>
+                            </li>
+                            <li class="modal__list-item">
+                                <div class="modal__item-box">
+                                    <img class="modal__img" src="../img/modal-yx1.png" alt="">
+                                    <div class="modal__item-box2">
+                                        <h3 class="modal-name">YX1</h3>
+                                        <p class="modal-price">$599</p>
+                                    </div>
+                                </div>
+                                <p class="summary-count">x1</p>
+                            </li>
+                        </ul>
+        
+                        <div class="modal__p-box s-total">
+                            <h3 class="modal__total">TOTAL</h3>
+                            <p class="modal__total-price">$5,396</p>
+                        </div>
+                        <div class="modal__p-box s-shipping">
+                            <h3 class="modal__total">SHIPPING</h3>
+                            <p class="modal__total-price">$50</p>
+                        </div>
+                        <div class="modal__p-box s-vat">
+                            <h3 class="modal__total">VAT (INCLUDED)</h3>
+                            <p class="modal__total-price">$1,079</p>
+                        </div>
+                        <div class="modal__p-box s-grandtotal">
+                            <h3 class="summary__total">GRAND TOTAL</h3>
+                            <p class="modal__total-price">$5,446</p>
+                        </div>
+        
+                        <button class="modal__checkout" type="submit">
+                            <a class="modal__checkout-link" href="checkout.html">CONTINUE & PAY</a>
+                        </button>
+                    </div>
                 </div>
-
-                <picture>
-                    <!-- <source type="image/webp" srcset="../img/gear.webp 1x, ../img/gear.png@2x.webp 2x"> -->
-                    <source media="(max-width: 37.5em)" srcset="../img/gear-mobile.png 1x, ../img/gear-mobile@2x.png 2x">
-                    <source media="(max-width: 56.25em)" srcset="../img/gear-tablet.png 1x, ../img/gear-tablet@2x.png 2x">
-                    <img src="../img/gear.png" srcset="../img/gear.png 1x, ../img/gear.png@2x.png 2x" alt="gear">                            
-                </picture>
             </div>
         </section>
     </main>

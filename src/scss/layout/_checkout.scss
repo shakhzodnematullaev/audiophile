@@ -1,0 +1,95 @@
+.checkout {
+    background-color: #F2F2F2;
+}
+
+.checkout__container {
+    padding-bottom: 14.1rem;
+}
+
+.checkout__box {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.checkout__form {
+    width: 64%;
+    padding: 5.4rem 4.8rem 4.8rem;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.checkout__link {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.billing-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5.3rem;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-bottom: 2.4rem;
+}
+
+.form-box--address {
+    width: 100%;
+}
+
+.label-name {
+    font-size: 1.2rem;
+    letter-spacing: -0.21px;
+    margin-bottom: 9px;
+}
+
+.input {
+    padding: 1.8rem 2.4rem;
+    border-radius: 8px;
+    border: 1px solid #CFCFCF;
+    font-size: 1.4rem;
+}
+
+::placeholder {
+    font-size: 1.4rem;
+    letter-spacing: -0.25px;
+}
+
+.billing-form--payment {
+    align-items: stretch;
+}
+
+.form-box--country {
+    margin-left: auto;
+}
+
+.summmary__box {
+    display: block;
+    width: 34%;
+    height: 61.2rem;
+    padding: 3.2rem;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.s-total,
+.s-shipping {
+    margin-bottom: 8px;
+}
+
+.s-vat {
+    margin-bottom: 2.4rem;
+}
+
+.s-grandtotal {
+    margin-bottom: 3.2rem;
+}
